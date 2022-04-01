@@ -1,7 +1,7 @@
 package main
 
 import (
-	"learn-go-with-tests/channel"
+	"learn-go-with-tests/context"
 )
 
 func main() {
@@ -9,8 +9,14 @@ func main() {
 	//mocking.Countdown(os.Stdout, sleeper)
 
 	// 没有缓冲channel
-	channel.NoBufferChannel()
+	//channel.NoBufferChannel()
 
 	// 有缓冲区channel
 	//channel.BufferChannel()
+
+	// done channel
+	//context.DoneChannel()
+
+	// done channel with context
+	context.DoneChannelWithContext()
 }
